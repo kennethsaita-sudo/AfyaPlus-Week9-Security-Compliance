@@ -1,0 +1,18 @@
+services:
+  api:
+    build: .
+    environment:
+      JWT_SECRET: ${JWT_SECRET}
+      PARTNER_API_URL: ${PARTNER_API_URL:-https://partner.example.org/api}
+      AUDIT_HASH_SALT: ${AUDIT_HASH_SALT:-local-lab-salt}
+    ports:
+      - "8000:8000"
+    read_only: true
+    tmpfs:
+      - /tmp
+    volumes:
+      - audit-data:/service/logs
+volumes:
+  audit-data:
+    # Production mapping: encrypted managed disk/object storage.
+    # Master key reference is documented in controls/kms_twin.json.

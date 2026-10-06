@@ -1,0 +1,6 @@
+{
+  "triage_messages": {"retain_days": 30, "action": "delete", "deletion_record": "append-only"},
+  "mcp_queries": {"retain_days": 14, "action": "delete", "deletion_record": "append-only"},
+  "audit_logs": {"retain_days": 90, "action": "delete", "deletion_record": "append-only"},
+  "deletion_records": {"retain_days": null, "action": "never_delete_by_sweeper"}
+}

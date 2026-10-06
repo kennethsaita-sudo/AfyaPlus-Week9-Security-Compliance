@@ -1,0 +1,9 @@
+{
+  "teaching_note": "Lawful-basis labels are coursework fields; legal review pending.",
+  "datasets": [
+    {"name": "triage_messages", "data": ["health message", "routing metadata"], "purpose": "advisory triage routing", "lawful_basis": "TEACHING FIELD: vital interests or healthcare provision; legal review pending", "retention_days": 30, "owner": "AfyaPlus Privacy Owner"},
+    {"name": "identifiers", "data": ["pseudonymous subject identifier"], "purpose": "authenticated service delivery and rights lookup", "lawful_basis": "TEACHING FIELD: contract/legal obligation; legal review pending", "retention_days": 30, "owner": "AfyaPlus Privacy Owner"},
+    {"name": "mcp_queries", "data": ["clinic ID", "stock item"], "purpose": "stock availability lookup", "lawful_basis": "TEACHING FIELD: legitimate interests; legal review pending", "retention_days": 14, "owner": "Logistics Operations"},
+    {"name": "audit_logs", "data": ["actor alias", "action", "resource", "outcome", "trace ID", "payload hash"], "purpose": "security audit and incident investigation", "lawful_basis": "TEACHING FIELD: legal obligation/legitimate interests; legal review pending", "retention_days": 90, "owner": "Security Lead"}
+  ]
+}

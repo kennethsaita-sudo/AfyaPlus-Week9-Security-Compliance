@@ -1,0 +1,7 @@
+{
+  "purpose": "Teaching fallback for encryption-at-rest key architecture",
+  "data_store": "audit-data managed volume or encrypted object storage",
+  "azure": {"key_store": "Azure Key Vault", "key_reference": "afyaplus-prod/data-master-key", "live": false},
+  "aws": {"key_store": "AWS KMS", "key_reference": "alias/afyaplus-prod-data", "live": false},
+  "controls": ["provider-managed encryption at rest", "restricted key access", "key rotation documented", "application never logs key material"]
+}

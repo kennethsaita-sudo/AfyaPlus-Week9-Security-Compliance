@@ -1,0 +1,6 @@
+{
+  "clinics": [
+    {"clinic_id": "CLINIC-NAI-001", "name": "AfyaPlus Nairobi Central"},
+    {"clinic_id": "CLINIC-MSA-001", "name": "AfyaPlus Mombasa Central"}
+  ]
+}
